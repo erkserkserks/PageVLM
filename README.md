@@ -32,12 +32,10 @@ This script uses a local Vision Language Model (VLM) running via an OpenAI-compa
 
     **Steps for LM Studio:**
     *   Open the LM Studio application.
-    *   Go to the **Search** tab (magnifying glass icon) and download a suitable VLM that supports vision/image input (e.g., search for "Gemma 3 Instruct").
-    *   Go to the **Local Server** tab ( `<->` icon).
-    *   At the top, select the model you downloaded from the dropdown menu.
-    *   Ensure the configuration options are suitable (GPU offloading, context length, etc. - defaults are often fine to start).
-    *   Click the **Start Server** button.
-    *   The server will start, and the **Model Configuration** section will show the exact model identifier loaded (e.g., `lmstudio-community/gemma-3-4b-it-gguf`) and the API Base URL (e.g., `http://localhost:1234/v1`). Note these down if they differ from the script's defaults, as you may need them for the `--model` and `--api_base_url` arguments.
+    *   **Download Model:** Use the search functionality to find and download a suitable VLM that supports vision/image input (e.g., search for "Gemma 3 Instruct").
+    *   **Load Model:** Load the model you just downloaded. Ensure other configurations (GPU offloading, context length) are suitable (defaults are often fine).
+    *   **Start Server:** Navigate to the **Developer** tab. Click the **Server Start** switch to activate the local inference server.
+    *   Ensure the server is running, typically at `http://localhost:1234/v1`. The application should indicate the server status.
     *   For more details, refer to the [LM Studio API Documentation](https://lmstudio.ai/docs/app/api).
 
 ## Configuration
